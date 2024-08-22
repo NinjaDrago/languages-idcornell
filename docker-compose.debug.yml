@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  csci330:
+    image: csci330
+    build:
+      context: .
+      dockerfile: ./Dockerfile
