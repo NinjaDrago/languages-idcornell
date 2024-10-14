@@ -3,7 +3,7 @@
 ```markdown
 # 🕹️ Hangman Game 🕹️
 
-This is a multi-user Hangman game built with **Node.js**, **Express**, and **PostgreSQL**. The application supports user registration, login, and allows multiple users to play individual games simultaneously. The backend uses a PostgreSQL database to keep track of users, game states, and the word list. The frontend is a simple, mobile-friendly interface built using **HTML**, **CSS**, **JavaScript**, and **Bootstrap**.
+This is a multi-user pokemon Hangman game built with **Node.js**, **Express**, and **PostgreSQL**. The application supports user registration, login, and allows multiple users to play individual games simultaneously. The backend uses a PostgreSQL database to keep track of users, game states, and the word list. The frontend is a simple, mobile-friendly interface built using **HTML**, **CSS**, **JavaScript**, and **Bootstrap**.
 
 ## Features
 - Register and login functionality.
