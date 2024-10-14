@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman Game</title>
+    <title>Pokémon Hangman Game</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container text-center mt-5">
-        <h1 class="mb-4">🕹️ Hangman Game 🕹️</h1>
+        <h1 class="mb-4">🕹️ Pokémon Hangman Game 🕹️</h1>
 
         <!-- User Registration and Login Section -->
         <div id="auth-section" class="mb-4">
-            <h3>Register New User</h3>
-            <input type="text" id="register-username" class="form-control mb-2" placeholder="Enter username">
+            <h3>Register New Trainer</h3>
+            <input type="text" id="register-username" class="form-control mb-2" placeholder="Enter trainer name">
             <button class="btn btn-primary" onclick="registerUser()">Register</button>
             
-            <h3 class="mt-4">Login</h3>
-            <input type="text" id="login-username" class="form-control mb-2" placeholder="Enter username">
+            <h3 class="mt-4">Trainer Login</h3>
+            <input type="text" id="login-username" class="form-control mb-2" placeholder="Enter trainer name">
             <button class="btn btn-secondary" onclick="loginUser()">Login</button>
         </div>
 
@@ -30,10 +30,10 @@
 
         <!-- Game State Section -->
         <div id="game-section" class="mb-4" style="display: none;">
-            <h3>Guess the Word</h3>
+            <h3>Guess the Pokémon</h3>
             
             <!-- Hangman Image -->
-            <img id="hangman-image" src="hangman0.svg" alt="Hangman" class="mb-3" style="width: 200px; height: 200px;">
+            <img id="hangman-image" src="hangman0.svg" alt="Pokéball" class="mb-3" style="width: 200px; height: 200px;">
             
             <!-- Word State -->
             <div id="word-state" class="mb-3 fs-1"></div>

@@ -2,6 +2,8 @@
 
 body {
     background-color: #f0f8ff;
+    background-image: url('images/pokemon_background.png'); /* If you have a Pokémon-themed background */
+    background-size: cover;
 }
 
 h1 {
@@ -11,6 +13,7 @@ h1 {
 
 h3 {
     font-family: 'Arial', sans-serif;
+    color: #007bff; /* Pokémon blue */
 }
 
 button {

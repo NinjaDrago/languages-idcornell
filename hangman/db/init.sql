@@ -27,5 +27,15 @@ CREATE TABLE IF NOT EXISTS words (
   word VARCHAR(50) UNIQUE NOT NULL
 );
 
--- Optional: Add initial words to the words table
-INSERT INTO words (word) VALUES ('javascript'), ('nodejs'), ('docker'), ('postgresql'), ('express');
+-- Add initial Pokémon names to the words table
+INSERT INTO words (word) VALUES 
+  ('pikachu'), 
+  ('charizard'), 
+  ('bulbasaur'), 
+  ('squirtle'), 
+  ('eevee'), 
+  ('snorlax'), 
+  ('gengar'), 
+  ('jigglypuff'), 
+  ('meowth'), 
+  ('psyduck');
