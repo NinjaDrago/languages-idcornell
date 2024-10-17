@@ -105,7 +105,7 @@ async function makeGuess() {
     displayGameState();
     if (data.status === 'won' || data.status === 'lost') {
       document.getElementById('result-section').style.display = 'block';
-      document.getElementById('result-message').textContent = `You ${data.status}! The word was: ${data.word}`;
+      document.getElementById('result-message').textContent = `You ${data.status}! The Pokémon was: ${data.word}`;
       document.getElementById('game-section').style.display = 'none';
     }
   } else {

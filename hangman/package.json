@@ -1,5 +1,5 @@
 {
-    "name": "hangman-app",
+    "name": "Pokémon-hangman-app",
     "version": "1.0.0",
     "description": "A multi-user Hangman game using Node.js and PostgreSQL.",
     "main": "app.js",
@@ -7,7 +7,7 @@
       "start": "node app.js",
       "dev": "nodemon app.js"
     },
-    "author": "Your Name",
+    "author": "Ian Cornell",
     "license": "MIT",
     "dependencies": {
       "dotenv": "^16.0.3",
