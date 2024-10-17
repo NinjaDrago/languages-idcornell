@@ -1,9 +1,10 @@
 ### `README.md`
 
 ```markdown
-# 🕹️ Hangman Game 🕹️
-
-This is a multi-user pokemon Hangman game built with **Node.js**, **Express**, and **PostgreSQL**. The application supports user registration, login, and allows multiple users to play individual games simultaneously. The backend uses a PostgreSQL database to keep track of users, game states, and the word list. The frontend is a simple, mobile-friendly interface built using **HTML**, **CSS**, **JavaScript**, and **Bootstrap**.
+# Pokémon Hangman Game 
+Chat GPT conversation link:
+https://chatgpt.com/share/6710805b-1174-8013-a54d-a9d8c4fa3fd2
+This is a multi-user Pokémon Hangman game built with **Node.js**, **Express**, and **PostgreSQL**. The application supports user registration, login, and allows multiple users to play individual games simultaneously. The backend uses a PostgreSQL database to keep track of users, game states, and the word list. The frontend is a simple, mobile-friendly interface built using **HTML**, **CSS**, **JavaScript**, and **Bootstrap**.
 
 ## Features
 - Register and login functionality.
@@ -64,6 +65,7 @@ Create a `.env` file in the root directory and add the following configuration:
 DATABASE_URL=postgres://postgres:postgres@db:5432/hangman_db
 PORT=3000
 ```
+make sure .env file is inside project folder(ex. inside hangman assigment)
 
 ### 3. Running the Application
 
@@ -74,6 +76,7 @@ You have two options to run the application: using **Docker** or running it loca
    ```bash
    docker-compose up --build
    ```
+   before running command make sure you are in the folder of the project 
 
 2. **Access the Application**:
    - Navigate to `http://localhost:3000` in your browser.
@@ -138,7 +141,7 @@ If you're using Visual Studio Code and have Docker installed, you can use the de
   - Response: `{ "message": "Words updated successfully" }`
 
 ## Screenshots
-![Hangman Game Screenshot](public/hangman_screenshot.png)
+![Hangman Game Screenshot](https://github.com/NinjaDrago/languages-idcornell/tree/main/hangman/ScreenShots)
 
 ## License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute as needed.
