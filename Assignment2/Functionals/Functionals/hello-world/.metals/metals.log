@@ -1,0 +1,165 @@
+2024.09.15 12:22:50 INFO  Started: Metals version 1.3.5 in folders 'D:\Documents\CSCI330\Functionals\hello-world' for client Visual Studio Code 1.93.0.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@78986fc0]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@3e26f8fe]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@78986fc0]
+2024.09.15 12:22:50 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.09.15 12:23:00 INFO  running 'C:\Users\ianco\AppData\Local\Coursier\cache\arc\https\github.com\adoptium\temurin17-binaries\releases\download\jdk-17%252B35\OpenJDK17-jdk_x64_windows_hotspot_17_35.zip\jdk-17+35\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\ianco\AppData\Local\Temp\metals6259867109023950050\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.09.15 12:23:05 INFO  [info] welcome to sbt 1.10.1 (Eclipse Adoptium Java 17)
+2024.09.15 12:23:07 INFO  [info] loading settings for project hello-world-build-build from metals.sbt ...
+2024.09.15 12:23:07 INFO  [info] loading project definition from D:\Documents\CSCI330\Functionals\hello-world\project\project
+2024.09.15 12:23:10 INFO  [info] loading settings for project hello-world-build from metals.sbt ...
+2024.09.15 12:23:10 INFO  [info] loading project definition from D:\Documents\CSCI330\Functionals\hello-world\project
+2024.09.15 12:23:15 INFO  [success] Generated .bloop\hello-world-build.json
+2024.09.15 12:23:15 INFO  [success] Total time: 5 s, completed Sep 15, 2024, 12:23:15 PM
+2024.09.15 12:23:16 INFO  [info] loading settings for project hello-world from build.sbt ...
+2024.09.15 12:23:16 INFO  [info] set current project to hello-world (in build file:/D:/Documents/CSCI330/Functionals/hello-world/)
+2024.09.15 12:23:18 INFO  [success] Generated .bloop\hello-world.json
+2024.09.15 12:23:18 INFO  [success] Generated .bloop\hello-world-test.json
+2024.09.15 12:23:18 INFO  [success] Total time: 2 s, completed Sep 15, 2024, 12:23:18 PM
+2024.09.15 12:23:18 INFO  time: ran 'sbt bloopInstall' in 17s
+2024.09.15 12:23:18 INFO  Attempting to connect to the build server...
+2024.09.15 12:23:18 INFO  Setting up current java home C:\Users\ianco\AppData\Local\Coursier\cache\arc\https\github.com\adoptium\temurin17-binaries\releases\download\jdk-17%252B35\OpenJDK17-jdk_x64_windows_hotspot_17_35.zip\jdk-17+35 in C:\Users\ianco\.bloop\bloop.json
+2024.09.15 12:23:20 INFO  no build target found for D:\Documents\CSCI330\Functionals\hello-world\build.sbt. Using presentation compiler with project's scala-library version: 3.3.3
+2024.09.15 12:23:23 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Documents\CSCI330\Functionals\hello-world\.metals\bsp.trace.json or C:\Users\ianco\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.09.15 12:23:24 WARN  Could not find semantic tokens for: file:///D:/Documents/CSCI330/Functionals/hello-world/build.sbt
+2024.09.15 12:23:25 INFO  Attempting to connect to the build server...
+2024.09.15 12:23:25 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Documents\CSCI330\Functionals\hello-world\project\.metals\bsp.trace.json or C:\Users\ianco\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.09.15 12:23:26 INFO  time: Connected to build server in 8.2s
+2024.09.15 12:23:26 INFO  Connected to Build server: Bloop v1.6.0
+2024.09.15 12:23:26 INFO  running doctor check
+2024.09.15 12:23:26 INFO  java targets: hello-world, hello-world-build, hello-world-test
+2024.09.15 12:23:35 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.09.15 12:23:44 INFO  time: indexed workspace in 17s
+2024.09.15 12:24:42 INFO  compiling hello-world (1 scala source)
+2024.09.15 12:24:44 INFO  time: compiled hello-world in 2.23s
+2024.09.15 12:28:22 INFO  compiling hello-world (1 scala source)
+2024.09.15 12:28:22 INFO  time: compiled hello-world in 0.14s
+Exception in thread "metals-watch-callback-thread" java.nio.file.NoSuchFileException: D:\Documents\CSCI330\Functionals\hello-world\src\main\scala\JsonSort.scala
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.mtags.ScalametaCommonEnrichments$XtensionAbsolutePath.toInput(ScalametaCommonEnrichments.scala:428)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionAbsolutePathBuffers.toInputFromBuffers(MetalsEnrichments.scala:620)
+	at scala.meta.internal.metals.Compilers.originInput$1(Compilers.scala:227)
+	at scala.meta.internal.metals.Compilers.$anonfun$didChange$2(Compilers.scala:243)
+	at scala.Option.getOrElse(Option.scala:201)
+	at scala.meta.internal.metals.Compilers.$anonfun$didChange$1(Compilers.scala:242)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.Compilers.didChange(Compilers.scala:230)
+	at scala.meta.internal.metals.MetalsLspService.onCreate(MetalsLspService.scala:378)
+	at scala.meta.internal.metals.ProjectMetalsLspService.didChangeWatchedFiles(ProjectMetalsLspService.scala:614)
+	at scala.meta.internal.metals.ProjectMetalsLspService.$anonfun$fileWatcher$3(ProjectMetalsLspService.scala:126)
+	at scala.meta.internal.metals.ProjectMetalsLspService.$anonfun$fileWatcher$3$adapted(ProjectMetalsLspService.scala:125)
+	at scala.meta.internal.metals.watcher.ProjectFileWatcher$$anon$1.loop(ProjectFileWatcher.scala:199)
+	at scala.meta.internal.metals.watcher.ProjectFileWatcher$$anon$1.run(ProjectFileWatcher.scala:203)
+Sep 15, 2024 12:35:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 358
+2024.09.15 12:35:31 INFO  compiling hello-world (2 scala sources)
+2024.09.15 12:35:31 INFO  time: compiled hello-world in 0.15s
+2024.09.15 12:35:31 INFO  compiling hello-world (2 scala sources)
+2024.09.15 12:35:31 INFO  time: compiled hello-world in 82ms
+2024.09.15 12:42:43 INFO  compiling hello-world (2 scala sources)
+2024.09.15 12:42:43 INFO  time: compiled hello-world in 0.28s
+2024.09.15 12:45:54 INFO  compiling hello-world (2 scala sources)
+2024.09.15 12:45:54 INFO  time: compiled hello-world in 0.11s
+2024.09.15 12:47:00 INFO  compiling hello-world (2 scala sources)
+2024.09.15 12:47:00 INFO  time: compiled hello-world in 98ms
+2024.09.15 12:47:22 INFO  compiling hello-world (2 scala sources)
+2024.09.15 12:47:22 INFO  time: compiled hello-world in 89ms
+2024.09.15 12:49:18 WARN  Using indexes to guess the definition of jsonList
+2024.09.15 12:50:09 INFO  compiling hello-world (2 scala sources)
+2024.09.15 12:50:09 INFO  time: compiled hello-world in 95ms
+2024.09.15 12:50:17 INFO  running 'C:\Users\ianco\AppData\Local\Coursier\cache\arc\https\github.com\adoptium\temurin17-binaries\releases\download\jdk-17%252B35\OpenJDK17-jdk_x64_windows_hotspot_17_35.zip\jdk-17+35\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\ianco\AppData\Local\Temp\metals15042424023213435025\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2024.09.15 12:50:19 INFO  [info] welcome to sbt 1.10.1 (Eclipse Adoptium Java 17)
+2024.09.15 12:50:19 INFO  [info] loading settings for project hello-world-build-build from metals.sbt ...
+2024.09.15 12:50:20 INFO  [info] loading project definition from D:\Documents\CSCI330\Functionals\hello-world\project\project
+2024.09.15 12:50:20 INFO  [info] loading settings for project hello-world-build from metals.sbt ...
+2024.09.15 12:50:20 INFO  [info] loading project definition from D:\Documents\CSCI330\Functionals\hello-world\project
+2024.09.15 12:50:23 INFO  [success] Generated .bloop\hello-world-build.json
+2024.09.15 12:50:23 INFO  [success] Total time: 2 s, completed Sep 15, 2024, 12:50:23 PM
+2024.09.15 12:50:24 INFO  [info] loading settings for project hello-world from build.sbt ...
+2024.09.15 12:50:24 INFO  [info] set current project to hello-world (in build file:/D:/Documents/CSCI330/Functionals/hello-world/)
+2024.09.15 12:50:26 INFO  [success] Generated .bloop\hello-world.json
+2024.09.15 12:50:26 INFO  [success] Generated .bloop\hello-world-test.json
+2024.09.15 12:50:26 INFO  [success] Total time: 2 s, completed Sep 15, 2024, 12:50:26 PM
+2024.09.15 12:50:27 INFO  time: ran 'sbt bloopInstall' in 9.38s
+2024.09.15 12:50:27 INFO  Disconnecting from Bloop session...
+2024.09.15 12:50:27 INFO  Shut down connection with build server.
+2024.09.15 12:50:27 INFO  Shut down connection with build server.
+2024.09.15 12:50:27 INFO  Attempting to connect to the build server...
+2024.09.15 12:50:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Documents\CSCI330\Functionals\hello-world\.metals\bsp.trace.json or C:\Users\ianco\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.09.15 12:50:27 INFO  Attempting to connect to the build server...
+2024.09.15 12:50:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Documents\CSCI330\Functionals\hello-world\project\.metals\bsp.trace.json or C:\Users\ianco\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2024.09.15 12:50:27 INFO  time: Connected to build server in 59ms
+2024.09.15 12:50:27 INFO  Connected to Build server: Bloop v1.6.0
+2024.09.15 12:50:27 INFO  running doctor check
+2024.09.15 12:50:27 INFO  java targets: hello-world, hello-world-build, hello-world-test
+2024.09.15 12:50:28 INFO  time: indexed workspace in 1.77s
+2024.09.15 12:50:29 INFO  compiling hello-world (2 scala sources)
+2024.09.15 12:50:29 INFO  time: compiled hello-world in 0.28s
+Sep 15, 2024 12:50:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1139
+2024.09.15 12:53:55 INFO  compiling hello-world (2 scala sources)
+2024.09.15 12:53:55 INFO  time: compiled hello-world in 0.23s
+Sep 15, 2024 12:54:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1365
+2024.09.15 12:54:19 INFO  compiling hello-world (2 scala sources)
+2024.09.15 12:54:19 INFO  time: compiled hello-world in 0.19s
+2024.09.15 12:56:46 INFO  compiling hello-world (2 scala sources)
+2024.09.15 12:56:47 INFO  time: compiled hello-world in 1.11s
+2024.09.15 12:57:30 INFO  compiling hello-world (1 scala source)
+2024.09.15 12:57:30 WARN  Could not load snapshot text for D:\Documents\CSCI330\Functionals\hello-world\src\main\scala\Main.scala
+2024.09.15 12:57:30 WARN  Could not load snapshot text for D:\Documents\CSCI330\Functionals\hello-world\src\main\scala\Main.scala
+2024.09.15 12:57:30 INFO  time: compiled hello-world in 0.7s
+2024.09.15 12:58:12 INFO  compiling hello-world (1 scala source)
+2024.09.15 12:58:12 INFO  time: compiled hello-world in 0.61s
+2024.09.15 12:59:05 INFO  compiling hello-world (1 scala source)
+2024.09.15 12:59:05 WARN  Could not load snapshot text for D:\Documents\CSCI330\Functionals\hello-world\src\main\scala\Main.scala
+2024.09.15 12:59:05 WARN  Could not load snapshot text for D:\Documents\CSCI330\Functionals\hello-world\src\main\scala\Main.scala
+2024.09.15 12:59:05 INFO  time: compiled hello-world in 0.54s
+2024.09.15 12:59:20 INFO  compiling hello-world (1 scala source)
+2024.09.15 12:59:20 INFO  time: compiled hello-world in 0.62s
+2024.09.15 12:59:35 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Documents\CSCI330\Functionals\hello-world\.metals\dap-server.trace.json or C:\Users\ianco\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.09.15 12:59:35 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Documents\CSCI330\Functionals\hello-world\.metals\dap-client.trace.json or C:\Users\ianco\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.09.15 12:59:35 INFO  Starting debug proxy for [Main]
+2024.09.15 12:59:35 INFO  Loaded expression compiler in 368 milliseconds
+2024.09.15 12:59:37 INFO  Loaded all sources and classes in 1 second
+2024.09.15 12:59:37 INFO  Initialized Scala 3 decoder in 3 milliseconds
+2024.09.15 12:59:37 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:58975 .
+2024.09.15 12:59:37 INFO  Attaching to debuggee VM succeeded.
+2024.09.15 12:59:38 INFO  Canceling debug proxy for [Main]
+2024.09.15 12:59:37 INFO  Closing debug server tcp://0.0.0.0:58972
+2024.09.15 13:00:20 INFO  Deduplicating compilation of hello-world from bsp client 'Metals 1.3.5' (since 9m 53.128s)
+2024.09.15 13:00:20 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Documents\CSCI330\Functionals\hello-world\.metals\dap-server.trace.json or C:\Users\ianco\AppData\Local\scalameta\metals\cache\dap-server.trace.json
+2024.09.15 13:00:20 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\Documents\CSCI330\Functionals\hello-world\.metals\dap-client.trace.json or C:\Users\ianco\AppData\Local\scalameta\metals\cache\dap-client.trace.json
+2024.09.15 13:00:20 INFO  Starting debug proxy for [Main]
+2024.09.15 13:00:20 INFO  Loaded expression compiler in 1 millisecond
+2024.09.15 13:00:21 INFO  Loaded all sources and classes in 1 second
+2024.09.15 13:00:21 INFO  Initialized Scala 3 decoder in 1 millisecond
+2024.09.15 13:00:21 INFO  Trying to attach to remote debuggee VM kubernetes.docker.internal:59104 .
+2024.09.15 13:00:21 INFO  Attaching to debuggee VM succeeded.
+2024.09.15 13:00:22 INFO  Canceling debug proxy for [Main]
+2024.09.15 13:00:21 INFO  Closing debug server tcp://0.0.0.0:59102
+2024.09.15 13:02:50 INFO  compiling hello-world (1 scala source)
+2024.09.15 13:02:50 INFO  time: compiled hello-world in 0.55s
+2024.09.15 13:03:04 INFO  compiling hello-world (1 scala source)
+2024.09.15 13:03:04 WARN  Could not load snapshot text for D:\Documents\CSCI330\Functionals\hello-world\src\main\scala\Main.scala
+2024.09.15 13:03:04 WARN  Could not load snapshot text for D:\Documents\CSCI330\Functionals\hello-world\src\main\scala\Main.scala
+2024.09.15 13:03:04 INFO  time: compiled hello-world in 0.54s
+2024.09.15 20:27:25 INFO  compiling hello-world (1 scala source)
+2024.09.15 20:27:26 INFO  time: compiled hello-world in 1.06s
+2024.09.15 20:27:33 INFO  compiling hello-world (1 scala source)
+2024.09.15 20:27:33 INFO  time: compiled hello-world in 0.69s
+2024.09.22 17:33:06 INFO  Shutting down server
+2024.09.22 17:33:06 INFO  shutting down Metals
+2024.09.22 17:33:07 INFO  Shut down connection with build server.
+2024.09.22 17:33:07 INFO  Shut down connection with build server.
+2024.09.22 17:33:07 INFO  Exiting server
