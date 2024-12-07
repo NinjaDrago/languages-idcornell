@@ -4,29 +4,24 @@ import akka.actor.typed.ActorSystem
 import akka.actor.typed.scaladsl.Behaviors
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.server.Directives._
+import akka.http.scaladsl.model.ContentTypes
+import akka.http.scaladsl.model.HttpEntity
 import akka.http.scaladsl.model.StatusCodes
-
-import io.circe.generic.auto._
-import io.circe.syntax._
-import io.circe.parser.decode
-import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport._
 import spray.json._
 
 import scala.io.StdIn
 
-// Define case class for JSON
-case class StringList(strings: List[String])
+// JSON Protocol for handling the list of strings
+trait JsonProtocol extends DefaultJsonProtocol {
+  implicit val stringListFormat = jsonFormat1(List[String])
+}
 
-object HelloWorldServer {
+object HelloWorldServer extends JsonProtocol {
+
   def main(args: Array[String]): Unit = {
     // Create an ActorSystem
     implicit val system = ActorSystem(Behaviors.empty, "helloWorldSystem")
     implicit val executionContext = system.executionContext
-
-    // Functional style sorting function
-    def sortStrings(input: StringList): StringList = {
-      StringList(input.strings.sorted)
-    }
 
     // Define the route
     val route =
@@ -35,22 +30,17 @@ object HelloWorldServer {
           complete(s"Hello, $person!")
         }
       } ~
-      path("sort") {
-        post {
-          entity(as[String]) { jsonInput =>
-            decode[StringList](jsonInput) match {
-              case Right(stringList) =>
-                val sortedList = sortStrings(stringList)
-                complete(StatusCodes.OK -> sortedList.asJson.noSpaces)
-              case Left(error) =>
-                complete(StatusCodes.BadRequest -> s"Invalid JSON: ${error.getMessage}")
-            }
-          }
-        }
-      } ~
       pathSingleSlash {
         get {
           complete(s"Hello!")
+        }
+      } ~
+      path("sortList") {
+        post {
+          entity(as[List[String]]) { list =>
+            val sortedList = list.sorted // Sort the list in functional programming style
+            complete(HttpEntity(ContentTypes.`application/json`, sortedList.toJson.prettyPrint))
+          }
         }
       }
 
